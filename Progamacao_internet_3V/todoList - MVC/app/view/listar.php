@@ -44,7 +44,7 @@
             <?php foreach ($tarefas as $tarefa): ?>
                 <li>
                     <?php echo ($tarefa['descricao']); ?>
-                    <a href="index.php?action=excluir&id=<?php echo $tarefas[0]['id']; ?>">
+                    <a href="index.php?action=excluir&id=<?php echo $tarefas['id']; ?>">
                         Excluir
                     </a>
                     <button
