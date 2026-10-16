@@ -15,7 +15,7 @@ class Database {
 
         if ($this -> conexao -> connect_error){
 
-            die("algo deu errado". $this -> conexao -> connect_error);
+            die ("Deu erro na conexão". $this -> conexao -> connect_error);
         }
 
         return $this -> conexao; 

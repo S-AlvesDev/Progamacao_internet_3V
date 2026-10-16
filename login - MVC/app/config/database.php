@@ -1,6 +1,7 @@
 <?php
 
 Class Database {
+
     private $servidor = 'localhost';
     private $usuario = 'root';
     private $senha = '';
@@ -12,9 +13,9 @@ Class Database {
 
         $this -> conexao = new mysqli($this -> servidor, $this -> usuario, $this -> senha, $this -> banco);
 
-        if($this -> conexao -> connect_error){
+        if ($this -> conexao -> connect_error){
 
-            die('Deu erro na conexão' . $this -> conexao -> connect_error);
+            die ('Deu erro na conexão' . $this -> conexao -> connect_error);
         }
 
         return $this -> conexao; 

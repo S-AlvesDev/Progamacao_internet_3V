@@ -9,7 +9,7 @@ class Tarefa{
     public function __construct(){
 
         $db = new Database();
-        $this -> conexao = $db->conectar();
+        $this -> conexao = $db -> conectar();
     }
 
     public function listar(): array {
