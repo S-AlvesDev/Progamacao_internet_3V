@@ -48,7 +48,27 @@ Class UsuarioController{
             exit;
         }
 
+        $erro = "E-mail ou senha estão incorretos";
+        include __DIR__ . '/../view/login.php';
+    }
 
+    public function painel(){
+
+        if (!isset($_SESSION['id'])){
+
+            header("Location: index.php");
+            exit;
+        }
+
+        include __DIR__ . '/../view/painel.php';
+    }
+
+    public function logout(){
+
+        session_destroy();
+
+        header("Location: index.php");
+        exit;
     }
 }
 
