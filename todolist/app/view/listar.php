@@ -39,7 +39,7 @@
                 <li>
                     <?php echo ($tarefa['descricao']); ?>
                     <a href="index.php?action=excluir&id=<?php echo $tarefa['id']; ?>"> Excluir </a>
-                    <button onclick="abrirModal(<?php echo $tarefa['id']; ?>, '<?php echo ($tarefa['descricao']); ?>')"> Editar </button>
+                    <a href="#" onclick="abrirModal(<?php echo $tarefa['id']; ?>, '<?php echo ($tarefa['descricao']); ?>');">Editar</a>
                 </li>
             <?php endforeach; ?>
         </ul>

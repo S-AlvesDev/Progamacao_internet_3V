@@ -21,7 +21,6 @@ Class Usuario{
 
         $resultado = $stmt -> get_result();
         return $resultado -> fetch_assoc();
-
     }
 }
 
